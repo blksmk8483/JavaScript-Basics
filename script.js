@@ -37,35 +37,38 @@
 
 // console.log(typeof null);
 
-let age = 39;
-age = 38;
-console.log(age);
+// let age = 39;
+// age = 38;
+// console.log(age);
 
-const birthYear = 1984;
-// birthYear = 1990;
+// const birthYear = 1984;
+// // birthYear = 1990;
 
-// const job
+// // const job
 
-var job = "programmer";
-job = "teacher";
-console.log(job);
+// var job = "programmer";
+// job = "teacher";
+// console.log(job);
 
-// // -----------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------
 
-// // LECTURE: Values and Variables ------------------------
-// let country = "United States";
-// let continent = "North America";
-// let population = "330,000,000 million";
+// LECTURE: Values and Variables ------------------------
+const country = "United States";
+const continent = "North America";
+const population = "330,000,000 million";
 
-// console.log(country);
-// console.log(continent);
-// console.log(population);
+console.log(country);
+console.log(continent);
+console.log(population);
 
-// // LECTURE: Data Types ------------------------
-// let isIsland = false;
-// let language;
+// LECTURE: Data Types ------------------------
+let isIsland = false;
+let language;
 
-// console.log(typeof isIsland);
-// console.log(typeof population);
-// console.log(typeof country);
-// console.log(typeof language);
+console.log(typeof isIsland);
+console.log(typeof population);
+console.log(typeof country);
+console.log(typeof language);
+
+// LECTURE: let, const, and var ------------------------
+language = "English";
