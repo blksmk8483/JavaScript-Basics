@@ -50,6 +50,37 @@
 // job = "teacher";
 // console.log(job);
 
+// Basic Operators
+
+// Math operators
+const now = 2037;
+// const ageBrandon = 2037 - 1984;
+// const ageSarah = 2037 - 1983;
+const ageBrandon = now - 1984;
+const ageSarah = now - 1983;
+console.log(ageBrandon, ageSarah);
+
+console.log(ageBrandon * 2, ageBrandon / 2, 2 ** 3);
+// 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2 = 8
+
+const firstName = "Brandon";
+const lastName = "Knight";
+console.log(`${firstName} ${lastName}`);
+
+// Assignment operators
+let x = 10 + 5; // this equals 15
+x += 10; // this equals x = 10 which equals 25
+x *= 4; // this will get me 100
+x++; // will add +1 you will end up with 101
+x--; // will take away 1 so you end up back with 100
+console.log(x);
+
+// Comparison Operatros (>, <, >=, <=)
+console.log(ageBrandon > ageSarah);
+console.log(ageBrandon >= 18);
+
+const isFullAge = ageSarah >= 18;
+
 // -----------------------------------------------------------------------------------
 
 // LECTURE: Values and Variables ------------------------
