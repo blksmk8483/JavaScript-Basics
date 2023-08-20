@@ -81,70 +81,121 @@
 
 // const isFullAge = ageSarah >= 18;
 
-// // Operator Precedence
-const now = 2037;
-const ageBrandon = 2037 - 1984;
-const ageSarah = 2037 - 1950;
-console.log(now - 1094 > now - 1950);
+// // // Operator Precedence
+// const now = 2037;
+// const ageBrandon = 2037 - 1984;
+// const ageSarah = 2037 - 1950;
+// console.log(now - 1094 > now - 1950);
 
-console.log(25 - 10 - 5);
+// console.log(25 - 10 - 5);
 
-x = y = 25 - 10 - 5;
-console.log(x, y);
+// x = y = 25 - 10 - 5;
+// console.log(x, y);
 
-const averageAge = (ageBrandon + ageSarah) / 2;
-console.log(ageBrandon, ageSarah, averageAge);
+// const averageAge = (ageBrandon + ageSarah) / 2;
+// console.log(ageBrandon, ageSarah, averageAge);
+
+// // Strings and Template Literals
+// const firstName = "Brandon";
+// const job = "Programmer";
+// const birthYear = 1984;
+// const year = 2037;
+
+// const brandon = `I'm ${firstName} a ${year - birthYear} year old ${job}`;
+// console.log(brandon);
+
+// // when I need a multi line string use the backtick!
+// console.log(`String
+// multiple
+// lines`);
+
+// // If / Else Statments
+// const age = 15;
+// const isOldEnough = age >= 18;
+// if (isOldEnough) {
+//   console.log(`Sarah can start driving lessons 🚗!!!`);
+// } else {
+//   const yearsLeft = 18 - age;
+//   console.log(
+//     `Sarah is not old enough! Wait another ${yearsLeft} years before starting driving lessons! 😛`
+//   );
+// }
+
+// If I write this as a ternary operator
+const age = 19;
+const yearsLeft = 18 - age;
+const isOldEnough =
+  age >= 18
+    ? console.log(`Sarah can start driving lessons 🚗!!!`)
+    : console.log(
+        `Sarah is not old enough! Wait another ${yearsLeft} years before starting driving lessons! 😛`
+      );
+
+// const birthYear = 1984;
+// let century;
+// if (birthYear <= 2000) {
+//   century = 20;
+// } else {
+//   century = 21;
+// }
+
+// console.log(century);
+
+// Other way to write this as a ternary
+const birthYear = 1984;
+let century = birthYear <= 2000 ? 20 : 21;
+console.log(century);
 
 // ------------   COURSE CHALLENGES   ------------
 // -----------------------------------------------------------------------------------
 
-// LECTURE: Values and Variables ------------------------
-const country = "United States";
-const continent = "North America";
-let population = 330000000;
+// // LECTURE: Values and Variables ------------------------
+// const country = "United States";
+// const continent = "North America";
+// let population = 330000000;
 
-console.log(country);
-console.log(continent);
-console.log(population);
+// console.log(country);
+// console.log(continent);
+// console.log(population);
 
-// LECTURE: Data Types ------------------------
-let isIsland = false;
-let language;
+// // LECTURE: Data Types ------------------------
+// let isIsland = false;
+// let language;
 
-console.log(typeof isIsland);
-console.log(typeof population);
-console.log(typeof country);
-console.log(typeof language);
+// console.log(typeof isIsland);
+// console.log(typeof population);
+// console.log(typeof country);
+// console.log(typeof language);
 
-// LECTURE: let, const, and var ------------------------
-language = "English";
+// // LECTURE: let, const, and var ------------------------
+// language = "English";
 
-// LECTURE: Basic Operators ------------------------
+// // LECTURE: Basic Operators ------------------------
 
-const splitPopulation = population / 2;
-console.log(splitPopulation); // 165000000
+// const splitPopulation = population / 2;
+// console.log(splitPopulation); // 165000000
 
-population++;
-console.log(population); //330000001
+// population++;
+// console.log(population); //330000001
 
-let finlandPopulation = 6000000;
+// let finlandPopulation = 6000000;
 
-console.log(population > finlandPopulation); // true
+// console.log(population > finlandPopulation); // true
 
-averageCountryPopulation = 3300000;
+// averageCountryPopulation = 3300000;
 
-console.log(population < averageCountryPopulation); // this should be false
+// console.log(population < averageCountryPopulation); // this should be false
 
-// "Portugal is in Europe, and its 11 million people speak Portuguese.";
+// // "Portugal is in Europe, and its 11 million people speak Portuguese.";
 
-const portCountry = "Portugal";
-const portContinent = "Europe";
-let portPopulation = 11;
-const portLanguage = "Portuguese";
+// const portCountry = "Portugal";
+// const portContinent = "Europe";
+// let portPopulation = 11;
+// const portLanguage = "Portuguese";
 
-console.log(
-  `${portCountry} is in ${portContinent}, and its ${portPopulation} million people speak ${portLanguage}.`
-);
+// console.log(
+//   `${portCountry} is in ${portContinent}, and its ${portPopulation} million people speak ${portLanguage}.`
+// );
 
 // -----------------------  CODING EXERCISE 1: CHALLENGE #1   ---------------------------
 
@@ -162,15 +213,34 @@ console.log(
 
 // TEST DATA: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 m tall.
 
-let massMark = 78;
-let heightMark = 1.69;
+// let massMark = 78;
+// let heightMark = 1.69;
 
-let massJohn = 92;
-let heightJohn = 1.95;
+// let massJohn = 92;
+// let heightJohn = 1.95;
 
-const BMIMark = massMark / (heightMark * heightMark);
-const BMIJohn = massJohn / (heightJohn * heightJohn);
-console.log(`Marks BMI: ${BMIMark}, Johns BMI: ${BMIJohn}`);
+// const BMIMark = massMark / (heightMark * heightMark);
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+// console.log(`Marks BMI: ${BMIMark}, Johns BMI: ${BMIJohn}`);
 
-const markHigherBMI = BMIMark > BMIJohn;
-console.log(`It is ${markHigherBMI} that Marks BMI is higher than Johns.`);
+// const markHigherBMI = BMIMark > BMIJohn;
+// console.log(`It is ${markHigherBMI} that Marks BMI is higher than Johns.`);
+
+// // LECTURE: Taking Decisions: if / else statements ------------------------
+
+const averageCountryPopulation = 33;
+let portugalPopulation = 11;
+
+if (portugalPopulation >= averageCountryPopulation) {
+  console.log(
+    `Portugal's population is ${
+      portugalPopulation - averageCountryPopulation
+    } million above average.`
+  );
+} else {
+  console.log(
+    `Portugal's population is ${
+      averageCountryPopulation - portugalPopulation
+    } million below averge.`
+  );
+}
