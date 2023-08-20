@@ -81,6 +81,20 @@
 
 // const isFullAge = ageSarah >= 18;
 
+const now = 2037;
+const ageBrandon = 2037 - 1984;
+const ageSarah = 2037 - 1950;
+console.log(now - 1094 > now - 1950);
+
+console.log(25 - 10 - 5);
+
+x = y = 25 - 10 - 5;
+console.log(x, y);
+
+const averageAge = (ageBrandon + ageSarah) / 2;
+console.log(ageBrandon, ageSarah, averageAge);
+
+// ------------   COURSE CHALLENGES   ------------
 // -----------------------------------------------------------------------------------
 
 // LECTURE: Values and Variables ------------------------
