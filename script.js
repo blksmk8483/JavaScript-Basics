@@ -122,14 +122,14 @@
 // }
 
 // If I write this as a ternary operator
-const age = 19;
-const yearsLeft = 18 - age;
-const isOldEnough =
-  age >= 18
-    ? console.log(`Sarah can start driving lessons 🚗!!!`)
-    : console.log(
-        `Sarah is not old enough! Wait another ${yearsLeft} years before starting driving lessons! 😛`
-      );
+// const age = 19;
+// const yearsLeft = 18 - age;
+// const isOldEnough =
+//   age >= 18
+//     ? console.log(`Sarah can start driving lessons 🚗!!!`)
+//     : console.log(
+//         `Sarah is not old enough! Wait another ${yearsLeft} years before starting driving lessons! 😛`
+//       );
 
 // const birthYear = 1984;
 // let century;
@@ -142,9 +142,9 @@ const isOldEnough =
 // console.log(century);
 
 // Other way to write this as a ternary
-const birthYear = 1984;
-let century = birthYear <= 2000 ? 20 : 21;
-console.log(century);
+// const birthYear = 1984;
+// let century = birthYear <= 2000 ? 20 : 21;
+// console.log(century);
 
 // ------------   COURSE CHALLENGES   ------------
 // -----------------------------------------------------------------------------------
@@ -228,19 +228,40 @@ console.log(century);
 
 // // LECTURE: Taking Decisions: if / else statements ------------------------
 
-const averageCountryPopulation = 33;
-let portugalPopulation = 11;
+// const averageCountryPopulation = 33;
+// let portugalPopulation = 11;
 
-if (portugalPopulation >= averageCountryPopulation) {
-  console.log(
-    `Portugal's population is ${
-      portugalPopulation - averageCountryPopulation
-    } million above average.`
-  );
+// if (portugalPopulation >= averageCountryPopulation) {
+//   console.log(
+//     `Portugal's population is ${
+//       portugalPopulation - averageCountryPopulation
+//     } million above average.`
+//   );
+// } else {
+//   console.log(
+//     `Portugal's population is ${
+//       averageCountryPopulation - portugalPopulation
+//     } million below averge.`
+//   );
+// }
+
+// -----------------------  CODING EXERCISE 12: CHALLENGE #2   ---------------------------
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
+
+/* Write your code below. Good luck! 🙂 */
+if (BMIMark > BMIJohn) {
+  console.log("Mark's BMI is higher than John's!");
 } else {
-  console.log(
-    `Portugal's population is ${
-      averageCountryPopulation - portugalPopulation
-    } million below averge.`
-  );
+  console.log("John's BMI is higher than Mark's!");
+}
+
+if (BMIMark > BMIJohn) {
+  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
 }
