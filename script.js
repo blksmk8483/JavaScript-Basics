@@ -146,6 +146,19 @@
 // let century = birthYear <= 2000 ? 20 : 21;
 // console.log(century);
 
+// TYPE Conversions and Coercion
+const inputYear = "1984";
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
+
+console.log("23" + "10" + 3);
+console.log("10" + 3);
+console.log("23" - "10" - 3);
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
+
 // ------------   COURSE CHALLENGES   ------------
 // -----------------------------------------------------------------------------------
 
@@ -246,22 +259,22 @@
 // }
 
 // -----------------------  CODING EXERCISE 12: CHALLENGE #2   ---------------------------
-const massMark = 78;
-const heightMark = 1.69;
-const massJohn = 92;
-const heightJohn = 1.95;
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
 
-const BMIMark = massMark / (heightMark * heightMark);
-const BMIJohn = massJohn / (heightJohn * heightJohn);
-console.log(BMIMark, BMIJohn);
+// const BMIMark = massMark / (heightMark * heightMark);
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+// console.log(BMIMark, BMIJohn);
 
-/* Write your code below. Good luck! 🙂 */
-if (BMIMark > BMIJohn) {
-  console.log("Mark's BMI is higher than John's!");
-} else {
-  console.log("John's BMI is higher than Mark's!");
-}
+// /* Write your code below. Good luck! 🙂 */
+// if (BMIMark > BMIJohn) {
+//   console.log("Mark's BMI is higher than John's!");
+// } else {
+//   console.log("John's BMI is higher than Mark's!");
+// }
 
-if (BMIMark > BMIJohn) {
-  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
-}
+// if (BMIMark > BMIJohn) {
+//   console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
+// }
