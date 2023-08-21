@@ -278,3 +278,11 @@ console.log(n);
 // if (BMIMark > BMIJohn) {
 //   console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
 // }
+
+// // LECTURE: Type Conversion Coercion ------------------------
+
+"9" - "5"; // 4
+"19" - "13" + "17"; // 617
+"19" - "13" + 17; // 23
+"123" < 57; // false
+5 + 6 + "4" + 9 - 4 - 2; // 1143
