@@ -212,28 +212,77 @@
 
 // if (favorite !== 23) console.log("Why not 23?");
 
-// Logical Operators:
-const hasDriversLicense = true; // A
-const hasGoodVision = true; // B
+// // Logical Operators:
+// const hasDriversLicense = true; // A
+// const hasGoodVision = true; // B
 
-console.log(hasDriversLicense && hasGoodVision); // this is true and this is true
-console.log(hasDriversLicense || hasGoodVision); // this is true or this is true
-console.log(!hasDriversLicense); // not true
+// console.log(hasDriversLicense && hasGoodVision); // this is true and this is true
+// console.log(hasDriversLicense || hasGoodVision); // this is true or this is true
+// console.log(!hasDriversLicense); // not true
 
-// if (hasDriversLicense && hasGoodVision) {
+// // if (hasDriversLicense && hasGoodVision) {
+// //   console.log("Sarah is able to drive!");
+// // } else {
+// //   console.log("Someone else should drive");
+// // }
+
+// const isTired = true;
+// console.log(hasDriversLicense || hasGoodVision || isTired);
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
 //   console.log("Sarah is able to drive!");
 // } else {
 //   console.log("Someone else should drive");
 // }
 
-const isTired = true;
-console.log(hasDriversLicense || hasGoodVision || isTired);
+// const country = "Portugal";
+// const continent = "Europe";
+// let population = 5;
+// let isIsland = true;
+// let language = "english";
 
-if (hasDriversLicense && hasGoodVision && !isTired) {
-  console.log("Sarah is able to drive!");
+// if (language === "english" && population < 50 && !isIsland) {
+//   console.log("You should live in Portugal");
+// } else {
+//   console.log("You should live somehwere else.");
+// }
+
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
+
+// console.log(scoreDolphins);
+// console.log(scoreKoalas);
+
+// if (scoreDolphins > scoreKoalas) {
+//   console.log("Dolphins win the trophy ");
+// } else if (scoreKoalas > scoreDolphins) {
+//   console.log("Koalas win the trohpy");
+// } else {
+//   console.log("Both win the trophy");
+// }
+
+// Bonus 1
+const scoreDolphins = (97 + 112 + 81) / 3;
+const scoreKoalas = (109 + 95 + 106) / 3;
+
+console.log(scoreDolphins);
+console.log(scoreKoalas);
+
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+  console.log("Dolphins win the trophy ");
+} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+  console.log("Koalas win the trohpy");
+} else if (
+  scoreDolphins === scoreKoalas &&
+  scoreDolphins >= 100 &&
+  scoreKoalas >= 100
+) {
+  console.log("Both win the trophy");
 } else {
-  console.log("Someone else should drive");
+  console.log("no one wins!");
 }
+
+// In this the Koalas will win
 
 // ------------   COURSE CHALLENGES   ------------
 // -----------------------------------------------------------------------------------
