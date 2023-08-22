@@ -146,18 +146,47 @@
 // let century = birthYear <= 2000 ? 20 : 21;
 // console.log(century);
 
+// // TYPE Conversions and Coercion
+// const inputYear = "1984";
+// console.log(Number(inputYear));
+// console.log(Number(inputYear) + 18);
+
+// console.log("23" + "10" + 3);
+// console.log("10" + 3);
+// console.log("23" - "10" - 3);
+
+// let n = "1" + 1;
+// n = n - 1;
+// console.log(n);
+
 // TYPE Conversions and Coercion
-const inputYear = "1984";
-console.log(Number(inputYear));
-console.log(Number(inputYear) + 18);
+// 5 falsy values: 0, '', undefined, null, NaN
+console.log(Boolean(0)); // false
+console.log(Boolean("")); // false
+console.log(Boolean(undefined)); // false
+console.log(Boolean("Brandon")); //true
+console.log(Boolean({})); //true
 
-console.log("23" + "10" + 3);
-console.log("10" + 3);
-console.log("23" - "10" - 3);
+const money = 0;
+if (money) {
+  console.log(`Don't spend it all!`);
+} else {
+  console.log(`You should get a job!`);
+}
 
-let n = "1" + 1;
-n = n - 1;
-console.log(n);
+//  just practicing this example as a conditional (ternary) operator
+const dinero = 1;
+const anyMoney =
+  dinero >= 15
+    ? console.log(`Don't spend it all in one place!`)
+    : console.log(`You should get a job!`);
+
+let height = 123;
+if (height) {
+  console.log(`YAY! height is defined!!!`);
+} else {
+  console.log(`Height is undefined!`);
+}
 
 // ------------   COURSE CHALLENGES   ------------
 // -----------------------------------------------------------------------------------
@@ -281,8 +310,8 @@ console.log(n);
 
 // // LECTURE: Type Conversion Coercion ------------------------
 
-"9" - "5"; // 4
-"19" - "13" + "17"; // 617
-"19" - "13" + 17; // 23
-"123" < 57; // false
-5 + 6 + "4" + 9 - 4 - 2; // 1143
+// "9" - "5"; // 4
+// "19" - "13" + "17"; // 617
+// "19" - "13" + 17; // 23
+// "123" < 57; // false
+// 5 + 6 + "4" + 9 - 4 - 2; // 1143
