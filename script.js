@@ -159,34 +159,58 @@
 // n = n - 1;
 // console.log(n);
 
-// TYPE Conversions and Coercion
-// 5 falsy values: 0, '', undefined, null, NaN
-console.log(Boolean(0)); // false
-console.log(Boolean("")); // false
-console.log(Boolean(undefined)); // false
-console.log(Boolean("Brandon")); //true
-console.log(Boolean({})); //true
+// // TYPE Conversions and Coercion
+// // 5 falsy values: 0, '', undefined, null, NaN
+// console.log(Boolean(0)); // false
+// console.log(Boolean("")); // false
+// console.log(Boolean(undefined)); // false
+// console.log(Boolean("Brandon")); //true
+// console.log(Boolean({})); //true
 
-const money = 0;
-if (money) {
-  console.log(`Don't spend it all!`);
-} else {
-  console.log(`You should get a job!`);
-}
+// const money = 0;
+// if (money) {
+//   console.log(`Don't spend it all!`);
+// } else {
+//   console.log(`You should get a job!`);
+// }
 
-//  just practicing this example as a conditional (ternary) operator
-const dinero = 1;
-const anyMoney =
-  dinero >= 15
-    ? console.log(`Don't spend it all in one place!`)
-    : console.log(`You should get a job!`);
+// //  just practicing this example as a conditional (ternary) operator
+// const dinero = 1;
+// const anyMoney =
+//   dinero >= 15
+//     ? console.log(`Don't spend it all in one place!`)
+//     : console.log(`You should get a job!`);
 
-let height = 123;
-if (height) {
-  console.log(`YAY! height is defined!!!`);
-} else {
-  console.log(`Height is undefined!`);
-}
+// let height = 123;
+// if (height) {
+//   console.log(`YAY! height is defined!!!`);
+// } else {
+//   console.log(`Height is undefined!`);
+// }
+
+// // Equality Operators: == vs. ===
+// const age = 18;
+// if (age === 18) console.log("You are 18!");
+// 18 === 18; // true
+// "18" === 18; // false
+// 18 === 19; // false
+// "18" == 18; // true
+// // !!! Best practice is to use the === since it is a strict result and the == could potentially bug
+
+// const favorite = Number(prompt("What's you favorite number?"));
+// console.log(favorite);
+
+// if (favorite === 23) {
+//   console.log("Cool, 23 is my favorite number too!");
+// } else if (favorite === 7) {
+//   console.log("7 is a cool number too!");
+// } else if (favorite === 9) {
+//   console.log("9 is okay I guess...");
+// } else {
+//   console.log("Number is not 23 or 7");
+// }
+
+// if (favorite !== 23) console.log("Why not 23?");
 
 // ------------   COURSE CHALLENGES   ------------
 // -----------------------------------------------------------------------------------
@@ -315,3 +339,42 @@ if (height) {
 // "19" - "13" + 17; // 23
 // "123" < 57; // false
 // 5 + 6 + "4" + 9 - 4 - 2; // 1143
+
+// // LECTURE: Equality Operators: == vs. === ------------------------
+
+// Equality Operators: == vs. ===
+// const age = 18;
+// if (age === 18) console.log("You are 18!");
+// 18 === 18; // true
+// "18" === 18; // false
+// 18 === 19; // false
+// "18" == 18; // true
+// // !!! Best practice is to use the === since it is a strict result and the == could potentially bug
+
+// const favorite = Number(prompt("What's you favorite number?"));
+// console.log(favorite);
+
+// if (favorite === 23) {
+//   console.log("Cool, 23 is my favorite number too!");
+// } else if (favorite === 7) {
+//   console.log("7 is a cool number too!");
+// } else if (favorite === 9) {
+//   console.log("9 is okay I guess...");
+// } else {
+//   console.log("Number is not 23 or 7");
+// }
+
+// if (favorite !== 23) console.log("Why not 23?");
+
+const numNeighbours = Number(
+  prompt("How many neighbour countires does you country have?")
+);
+// console.log(numNeighbours);
+
+if (numNeighbours === 1) {
+  console.log("Only 1 border!");
+} else if (numNeighbours > 1) {
+  console.log("More than 1 border");
+} else {
+  console.log("No borders");
+}
