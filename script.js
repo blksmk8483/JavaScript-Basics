@@ -212,6 +212,29 @@
 
 // if (favorite !== 23) console.log("Why not 23?");
 
+// Logical Operators:
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision); // this is true and this is true
+console.log(hasDriversLicense || hasGoodVision); // this is true or this is true
+console.log(!hasDriversLicense); // not true
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log("Sarah is able to drive!");
+// } else {
+//   console.log("Someone else should drive");
+// }
+
+const isTired = true;
+console.log(hasDriversLicense || hasGoodVision || isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Sarah is able to drive!");
+} else {
+  console.log("Someone else should drive");
+}
+
 // ------------   COURSE CHALLENGES   ------------
 // -----------------------------------------------------------------------------------
 
@@ -340,41 +363,15 @@
 // "123" < 57; // false
 // 5 + 6 + "4" + 9 - 4 - 2; // 1143
 
-// // LECTURE: Equality Operators: == vs. === ------------------------
+// const numNeighbours = Number(
+//   prompt("How many neighbour countires does you country have?")
+// );
+// // console.log(numNeighbours);
 
-// Equality Operators: == vs. ===
-// const age = 18;
-// if (age === 18) console.log("You are 18!");
-// 18 === 18; // true
-// "18" === 18; // false
-// 18 === 19; // false
-// "18" == 18; // true
-// // !!! Best practice is to use the === since it is a strict result and the == could potentially bug
-
-// const favorite = Number(prompt("What's you favorite number?"));
-// console.log(favorite);
-
-// if (favorite === 23) {
-//   console.log("Cool, 23 is my favorite number too!");
-// } else if (favorite === 7) {
-//   console.log("7 is a cool number too!");
-// } else if (favorite === 9) {
-//   console.log("9 is okay I guess...");
+// if (numNeighbours === 1) {
+//   console.log("Only 1 border!");
+// } else if (numNeighbours > 1) {
+//   console.log("More than 1 border");
 // } else {
-//   console.log("Number is not 23 or 7");
+//   console.log("No borders");
 // }
-
-// if (favorite !== 23) console.log("Why not 23?");
-
-const numNeighbours = Number(
-  prompt("How many neighbour countires does you country have?")
-);
-// console.log(numNeighbours);
-
-if (numNeighbours === 1) {
-  console.log("Only 1 border!");
-} else if (numNeighbours > 1) {
-  console.log("More than 1 border");
-} else {
-  console.log("No borders");
-}
