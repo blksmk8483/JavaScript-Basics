@@ -284,71 +284,100 @@
 
 // In this the Koalas will win
 
-// The switch statement:
-const day = "saturday";
+// // The switch statement:
+// const day = "saturday";
 
-switch (day) {
-  case "monday": // day === 'monday'
-    console.log("Plan course structure");
-    console.log("Go to coding meetup");
-    break;
-  case "tuesday":
-    console.log("Prepare theory videos");
-    break;
-  case "wednesday":
-  case "thursday":
-    console.log("Write code examples");
-    break;
-  case "friday":
-    console.log("Record videos");
-    break;
-  case "saturday":
-  case "sunday":
-    console.log("Enjoy the weekend!");
-    break;
-  default:
-    console.log("Not a valid day!");
-}
+// switch (day) {
+//   case "monday": // day === 'monday'
+//     console.log("Plan course structure");
+//     console.log("Go to coding meetup");
+//     break;
+//   case "tuesday":
+//     console.log("Prepare theory videos");
+//     break;
+//   case "wednesday":
+//   case "thursday":
+//     console.log("Write code examples");
+//     break;
+//   case "friday":
+//     console.log("Record videos");
+//     break;
+//   case "saturday":
+//   case "sunday":
+//     console.log("Enjoy the weekend!");
+//     break;
+//   default:
+//     console.log("Not a valid day!");
+// }
 
-// vs. the if statement
-if (day === "monday") {
-  console.log("Plan course structure");
-  console.log("Go to coding meetup");
-} else if (day === "tuesday") {
-  console.log("Prepare theory videos");
-} else if (day === "wednesday" || day === "thursday") {
-  console.log("Write code examples");
-} else if (day === "friday") {
-  console.log("Record videos");
-} else if (day === "saturday" || day === "sunday") {
-  console.log("Enjoy the weekend!");
-} else {
-  console.log("Not a valid day!");
-}
+// // vs. the if statement
+// if (day === "monday") {
+//   console.log("Plan course structure");
+//   console.log("Go to coding meetup");
+// } else if (day === "tuesday") {
+//   console.log("Prepare theory videos");
+// } else if (day === "wednesday" || day === "thursday") {
+//   console.log("Write code examples");
+// } else if (day === "friday") {
+//   console.log("Record videos");
+// } else if (day === "saturday" || day === "sunday") {
+//   console.log("Enjoy the weekend!");
+// } else {
+//   console.log("Not a valid day!");
+// }
 
-const language = "spanish";
+// const language = "spanish";
 
-switch (language) {
-  case "chinese":
-  case "mandarin":
-    console.log("MOST number of native speakers!");
-    s;
-    break;
-  case "spanish":
-    console.log("2nd place in number of native speakers");
-    break;
-  case "english":
-    console.log("3rd place");
-    break;
-  case "hindi":
-    console.log("Number 4");
-    break;
-  case "arabic":
-    console.log("5th most spoken language");
-    break;
-  default:
-    console.log("Great language too 😄");
-}
+// switch (language) {
+//   case "chinese":
+//   case "mandarin":
+//     console.log("MOST number of native speakers!");
+//     s;
+//     break;
+//   case "spanish":
+//     console.log("2nd place in number of native speakers");
+//     break;
+//   case "english":
+//     console.log("3rd place");
+//     break;
+//   case "hindi":
+//     console.log("Number 4");
+//     break;
+//   case "arabic":
+//     console.log("5th most spoken language");
+//     break;
+//   default:
+//     console.log("Great language too 😄");
+// }
+
+// 3 + 4;
+// 1991;
+// true && false && !false;
+// if (23 > 10) {
+//   const str = "23 is bigger";
+// }
+
+// const me = "Brandon";
+// console.log(`I'm ${2023 - 1984} years old ${me}`);
+
+// The Conditional (Ternary) Operator ------------------------------------------------
+const age = 39;
+age >= 18
+  ? console.log("I like to drink Dr. Pepper")
+  : console.log("I like to drink water!");
+
+const drink = age >= 18 ? "Dr. Pepper 🥤" : "water 🥛";
+console.log(drink);
+
+// let drink2;
+// if (age >= 18) {
+//   drink2 = "wine";
+// } else {
+//   drink2 = "water";
+// }
+// console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? "Dr. Pepper 🥤" : "water 🥛"}`);
 
 // ------------   COURSE CHALLENGES   ------------
 // -----------------------------------------------------------------------------------
