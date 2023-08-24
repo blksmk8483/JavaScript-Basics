@@ -261,28 +261,70 @@
 //   console.log("Both win the trophy");
 // }
 
-// Bonus 1
-const scoreDolphins = (97 + 112 + 81) / 3;
-const scoreKoalas = (109 + 95 + 106) / 3;
+// // Bonus 1
+// const scoreDolphins = (97 + 112 + 81) / 3;
+// const scoreKoalas = (109 + 95 + 106) / 3;
 
-console.log(scoreDolphins);
-console.log(scoreKoalas);
+// console.log(scoreDolphins);
+// console.log(scoreKoalas);
 
-if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
-  console.log("Dolphins win the trophy ");
-} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
-  console.log("Koalas win the trohpy");
-} else if (
-  scoreDolphins === scoreKoalas &&
-  scoreDolphins >= 100 &&
-  scoreKoalas >= 100
-) {
-  console.log("Both win the trophy");
-} else {
-  console.log("no one wins!");
-}
+// if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+//   console.log("Dolphins win the trophy ");
+// } else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+//   console.log("Koalas win the trohpy");
+// } else if (
+//   scoreDolphins === scoreKoalas &&
+//   scoreDolphins >= 100 &&
+//   scoreKoalas >= 100
+// ) {
+//   console.log("Both win the trophy");
+// } else {
+//   console.log("no one wins!");
+// }
 
 // In this the Koalas will win
+
+// The switch statement:
+const day = "saturday";
+
+switch (day) {
+  case "monday": // day === 'monday'
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+  case "friday":
+    console.log("Record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy the weekend!");
+    break;
+  default:
+    console.log("Not a valid day!");
+}
+
+// vs. the if statement
+if (day === "monday") {
+  console.log("Plan course structure");
+  console.log("Go to coding meetup");
+} else if (day === "tuesday") {
+  console.log("Prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("Write code examples");
+} else if (day === "friday") {
+  console.log("Record videos");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("Enjoy the weekend!");
+} else {
+  console.log("Not a valid day!");
+}
 
 // ------------   COURSE CHALLENGES   ------------
 // -----------------------------------------------------------------------------------
