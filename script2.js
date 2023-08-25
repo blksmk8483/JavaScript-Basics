@@ -77,6 +77,21 @@ const age2 = calcAge2(1984);
 
 console.log(age1, age2);
 
+// FUNCTION DECLARATIONS vs. EXPRESSIONS challenge:
+function percentageOfWorld1(poplulation) {
+  return (poplulation / 7900) * 100;
+}
+
+const AmericaPercentageOfWorld = percentageOfWorld1(330);
+console.log(AmericaPercentageOfWorld);
+
+const percentageOfWorld2 = function (poplulation) {
+  return (poplulation / 7900) * 100;
+};
+
+const spainPercentageOfWorld = percentageOfWorld2(20);
+console.log(spainPercentageOfWorld);
+
 // ----------------------------------------------------------------------------------
 // ARROW FUNCTIONS:
 
