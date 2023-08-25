@@ -27,6 +27,27 @@ console.log(appleJuice);
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 
+// FUNCTIONS challenge:
+// first way
+// function describeCountry(country, population, capitalCity) {
+//   console.log(
+//     `${country} has ${population} million people and its capital city is ${capitalCity}.`
+//   );
+// }
+
+// console.log(describeCountry("Finland", 6, "Helsinki"));
+
+// second way
+function describeCountry(country, population, capitalCity) {
+  return `${country} has ${population} million people and its capital city is ${capitalCity}.`;
+}
+
+const describeFinland = describeCountry("Finland", 6, "Helsinki");
+const describeAmerica = describeCountry("United States", 6, "Washington, D.C.");
+const describePortugal = describeCountry("Portugal", 10, "Lisbon");
+
+console.log(describePortugal, describeAmerica, describeFinland);
+
 // ----------------------------------------------------------------------------------
 // FUNCTION DECLARATIONS vs. EXPRESSIONS:
 
