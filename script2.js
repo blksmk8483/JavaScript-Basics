@@ -109,3 +109,13 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1984, "Brandon"));
 console.log(yearsUntilRetirement(1975, "Sarah"));
+
+// ARROW FUNCTIONS challenge:
+const percentageOfWorld3 = (poplulation) =>
+  ((poplulation / 7900) * 100).toFixed(2);
+
+console.log(
+  `Americas population is ${percentageOfWorld3(
+    330
+  )}% of the total world population.`
+);
