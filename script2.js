@@ -27,7 +27,7 @@ console.log(appleJuice);
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 
-// FUNCTIONS challenge:
+// challenge:
 // first way
 // function describeCountry(country, population, capitalCity) {
 //   console.log(
@@ -77,9 +77,9 @@ const age2 = calcAge2(1984);
 
 console.log(age1, age2);
 
-// FUNCTION DECLARATIONS vs. EXPRESSIONS challenge:
+// challenge:
 function percentageOfWorld1(poplulation) {
-  return (poplulation / 7900) * 100;
+  return ((poplulation / 7900) * 100).toFixed(2);
 }
 
 const AmericaPercentageOfWorld = percentageOfWorld1(330);
@@ -110,7 +110,7 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 console.log(yearsUntilRetirement(1984, "Brandon"));
 console.log(yearsUntilRetirement(1975, "Sarah"));
 
-// ARROW FUNCTIONS challenge:
+// challenge:
 const percentageOfWorld3 = (poplulation) =>
   ((poplulation / 7900) * 100).toFixed(2);
 
@@ -119,3 +119,31 @@ console.log(
     330
   )}% of the total world population.`
 );
+
+// ----------------------------------------------------------------------------------
+// FUNCTIONS CALLING OUT OTHER FUNCTIONS:
+
+function cutFruitePieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitePieces(apples);
+  const oragnePieces = cutFruitePieces(oranges);
+  const juice = `Juice with ${applePieces} pieces of apple and ${oragnePieces} pieces of orange.`;
+  return juice;
+}
+
+console.log(fruitProcessor(2, 3));
+
+// challenge
+
+function describePopulation(country, population) {
+  const percentage = percentageOfWorld1(population);
+  const description = `${country} has ${population} million people, which is about ${percentage}% of the world.`;
+  console.log(description);
+}
+
+describePopulation("Portugal", 14);
+describePopulation("America", 330);
+describePopulation("Spain", 17);
