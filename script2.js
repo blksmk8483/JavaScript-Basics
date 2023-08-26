@@ -201,3 +201,51 @@ checkWinner(scoreDolphins2, scoreKoalas2);
 
 // Test 3 (random input)
 checkWinner(55, 20);
+
+// ----------------------------------------------------------------------------------
+// Introduction to Arrays:
+
+const friend1 = "Michael";
+const friend2 = "Sarah";
+const friend3 = "Jacob";
+
+const friends = ["Michael", "Sarah", "Jacob"];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+console.log(years);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay";
+console.log(friends);
+
+const firstName = "Brandon";
+const brandon = [firstName, "Knight", 2037 - 1984, "teacher", friends];
+console.log(brandon);
+
+// Exercise
+const age4 = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const years7 = [1990, 1967, 2002, 2010, 2018];
+
+const ag1 = age4(years7[0]);
+const ag2 = age4(years7[1]);
+const ag3 = age4(years7[years7.length - 1]);
+
+console.log(ag1, ag2, ag3);
+
+const ages = [
+  age4(years7[0]),
+  age4(years7[1]),
+  age4(years7[years7.length - 1]),
+];
+
+console.log(JSON.stringify(ages));
+console.log(ages.toString());
