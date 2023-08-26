@@ -137,7 +137,6 @@ function fruitProcessor(apples, oranges) {
 console.log(fruitProcessor(2, 3));
 
 // challenge
-
 function describePopulation(country, population) {
   const percentage = percentageOfWorld1(population);
   const description = `${country} has ${population} million people, which is about ${percentage}% of the world.`;
@@ -147,3 +146,58 @@ function describePopulation(country, population) {
 describePopulation("Portugal", 14);
 describePopulation("America", 330);
 describePopulation("Spain", 17);
+
+// ----------------------------------------------------------------------------------
+// REVIEWING FUNCTIONS:
+
+const calcAge = function (birthYear) {
+  return 2023 - birthYear;
+};
+
+const yearsUntilRetirement2 = function (birthYear, firstName) {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+
+  if (retirement > 0) {
+    console.log(`${firstName} retires in ${retirement} years.`);
+    return retirement;
+  } else {
+    console.log(`${firstName} has already retired 🎉`);
+    return -1;
+  }
+};
+
+console.log(yearsUntilRetirement2(1984, "Brandon"));
+console.log(yearsUntilRetirement2(1950, "Sarah"));
+
+// ----------------------------------------------------------------------------------
+// Coding Exercise #5: Challenge #1:
+const calcAverage = (score1, score2, score3) => {
+  return (score1 + score2 + score3) / 3;
+};
+
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
+
+console.log(scoreDolphins, scoreKoalas);
+
+const checkWinner = function (avgDolphins, avgKoalas) {
+  if (avgDolphins >= 2 * avgKoalas) {
+    console.log(`Dolphins win 🏆 (${avgDolphins} vs. ${avgKoalas})`);
+  } else if (avgKoalas >= 2 * avgDolphins) {
+    console.log(`Koalas win 🏆 (${avgKoalas} vs. ${avgDolphins})`);
+  } else {
+    console.log("No team wins...");
+  }
+};
+
+// Test 1
+checkWinner(scoreDolphins, scoreKoalas);
+
+// Test 2
+const scoreDolphins2 = calcAverage(85, 54, 41);
+const scoreKoalas2 = calcAverage(23, 34, 27);
+checkWinner(scoreDolphins2, scoreKoalas2);
+
+// Test 3 (random input)
+checkWinner(55, 20);
