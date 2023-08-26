@@ -249,3 +249,28 @@ const ages = [
 
 console.log(JSON.stringify(ages));
 console.log(ages.toString());
+
+// Challenge
+const populations = [10, 15, 35, 300];
+
+// if (populations.length === 4) {
+//   console.log(`The array has 4 elements.`);
+// } else {
+//   console.log(`The array does not have enough elements yet...`);
+// }
+populations.length === 4
+  ? console.log(`The array has 4 elements.`)
+  : console.log("Not enough elements.");
+
+// Calling this from previous but copied here for easier reference
+// function percentageOfWorld1(poplulation) {
+//   return ((poplulation / 7900) * 100).toFixed(2);
+// }
+
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[3]),
+];
+console.log(percentages.toString());
