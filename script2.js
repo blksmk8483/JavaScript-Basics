@@ -361,10 +361,48 @@ const brandon1 = {
   friends: ["Michael", "Peter", "Steven"],
 };
 
+console.log(brandon1);
+
 console.log(
   `My name is ${brandon1.firstName} ${brandon1.lastName}. I am ${
     brandon1.age
   } years old. I am a ${
     brandon1.job
   } and my friends are ${brandon1.friends.toString()}.`
+);
+
+console.log(brandon1["firstName"]);
+
+const nameKey = "Name";
+console.log(brandon1["first" + nameKey]);
+console.log(brandon1["last" + nameKey]);
+
+// const interestedIn = prompt(
+//   "What do you want to know about Brandon? Choose between firstName, lastName, age, job, and friends."
+// );
+// console.log(brandon1[interestedIn]);
+
+// if (brandon1[interestedIn]) {
+//   console.log(brandon1[interestedIn]);
+// } else {
+//   console.log(
+//     "Wrong request! Choose between firstName, lastName, age, job, and friends."
+//   );
+// }
+
+// const wrongRequest = prompt(
+//   "Wrong request! Choose between firstName, lastName, age, job, and friends."
+// );
+
+// brandon1[interestedIn] ? console.log(brandon1[interestedIn]) : wrongRequest;
+
+brandon1.location = "Texas";
+brandon1["twitter"] = "@blksmk8483";
+console.log(brandon1);
+
+// Challenge
+//  friends: ["Michael", "Peter", "Steven"],
+
+console.log(
+  `${brandon1.firstName} has ${brandon1.friends.length} friends, and his best friend is called ${brandon1.friends[0]}.`
 );
