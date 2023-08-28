@@ -406,3 +406,70 @@ console.log(brandon1);
 console.log(
   `${brandon1.firstName} has ${brandon1.friends.length} friends, and his best friend is called ${brandon1.friends[0]}.`
 );
+
+// ----------------------------------------------------------------------------------
+// Object Methods:
+const brandon2 = {
+  firstName: "Brandon",
+  lastName: "Knight",
+  birthYear: 1984,
+  job: "web developer",
+  friends: ["Michael", "Peter", "Steven"],
+  hasDriversLicense: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+
+  // calcAge: function () {
+  //   console.log(this);
+  //   return 2037 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} -year old ${
+      this.job
+    }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's licenee.`;
+  },
+};
+
+console.log(brandon2.calcAge());
+// console.log(brandon2["calcAge"](1984));
+console.log(brandon2.age);
+
+// Challenge
+// "Brandon is a 53-year old web decveloprer, and he has a driver's license."
+
+// console.log(
+//   `${brandon2.firstName} is a ${brandon2.calcAge()}-year old ${
+//     brandon2.job
+//   }, and he has ${
+//     brandon2.hasDriversLicense === true ? "a" : "no"
+//   } driver's licenee.`
+// );
+
+console.log(brandon2.getSummary());
+
+// Dot vs. Bracket Notation challenge
+
+const myCountry = {
+  country: "America",
+  capital: "Washington D.C.",
+  language: "English",
+  population: 334,
+  neighbours: ["Canada", "Mexico", "California"],
+};
+
+console.log(
+  `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighboring countries and a capital called ${myCountry.capital}.`
+);
+
+myCountry.population += 2;
+console.log(myCountry.population);
+myCountry["population"] -= 2;
+console.log(myCountry.population);
