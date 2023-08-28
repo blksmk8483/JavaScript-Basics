@@ -274,3 +274,78 @@ const percentages = [
   percentageOfWorld1(populations[3]),
 ];
 console.log(percentages.toString());
+
+// ----------------------------------------------------------------------------------
+// Basic Array Operators (Methods):
+
+// Add elements:
+const friends2 = ["Michael", "Sarah", "Jacob"]; // push method adds to the end of an array
+friends2.push("Brandon");
+console.log(friends2.toString());
+
+friends2.unshift("John"); // unshift method adds to the beginning of an array
+console.log(friends2);
+
+// Remove elements:
+friends2.pop(); // pop method removes the last element from an array
+console.log(friends2);
+
+friends2.shift(); //shift method removes the first element from an array
+console.log(friends2);
+
+console.log(friends2.indexOf("Sarah")); // Sarah is in position 1 since JS starts at 0
+console.log(friends2.indexOf("Bob")); // Bob does not exsist so we get -1
+
+console.log(friends.includes("Sarah")); // true
+console.log(friends.includes("Bob")); // false
+
+if (friends2.includes("Sarah")) {
+  console.log("You have a friend called Sarah.");
+}
+
+// Challenge
+const neighbours = ["Mexico", "Canada", "California"];
+neighbours.push("Utopia");
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+// Determine if the country is near Germany as an if/else
+if (neighbours.includes("Germany")) {
+  console.log("You must be a central European country 😀");
+} else {
+  console.log("Probably not a central European country 😆");
+}
+
+// Same but as a ternary
+neighbours.includes("Germany")
+  ? console.log("You must be a central European country 😀")
+  : console.log("Probably not a central European country 😆");
+
+// Or I can just use the !
+if (!neighbours.includes("Germany")) {
+  console.log("Not a central European country 😛");
+}
+
+neighbours[0] = "Spanish";
+neighbours[1] = "Ah";
+neighbours[2] = "Wokeville";
+
+// Or I can use indexOf
+neighbours[neighbours.indexOf("Spanish")] = "Republic of Mexico";
+
+console.log(neighbours);
+
+// CHALLENGE #2
+
+const calcTip = (bill) => {
+  return bill <= 300 && bill >= 50 ? 0.15 * bill : 0.2 * bill;
+};
+console.log(calcTip(100));
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(bills, tips, totals);
