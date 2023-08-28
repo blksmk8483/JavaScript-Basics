@@ -279,8 +279,8 @@ console.log(percentages.toString());
 // Basic Array Operators (Methods):
 
 // Add elements:
-const friends2 = ["Michael", "Sarah", "Jacob"]; // push method adds to the end of an array
-friends2.push("Brandon");
+const friends2 = ["Michael", "Sarah", "Jacob"];
+friends2.push("Brandon"); // push method adds to the end of an array
 console.log(friends2.toString());
 
 friends2.unshift("John"); // unshift method adds to the beginning of an array
@@ -349,3 +349,22 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(bills, tips, totals);
+
+// ----------------------------------------------------------------------------------
+// Introductions to Objects:
+
+const brandon1 = {
+  firstName: "Brandon",
+  lastName: "Knight",
+  age: 2037 - 1984,
+  job: "web developer",
+  friends: ["Michael", "Peter", "Steven"],
+};
+
+console.log(
+  `My name is ${brandon1.firstName} ${brandon1.lastName}. I am ${
+    brandon1.age
+  } years old. I am a ${
+    brandon1.job
+  } and my friends are ${brandon1.friends.toString()}.`
+);
