@@ -473,3 +473,98 @@ myCountry.population += 2;
 console.log(myCountry.population);
 myCountry["population"] -= 2;
 console.log(myCountry.population);
+
+// Challenge
+// const mark = {
+//   fullName: "Mark Miller",
+//   mass: 78,
+//   height: 1.69,
+//   calcBMI: function () {
+//     // return mark.mass / (mark.height * mark.height);
+//     this.bmi = this.mass / (this.height * this.height);
+//     return this.bmi;
+//   },
+// };
+
+// const john = {
+//   fullName: "John Smith",
+//   mass: 92,
+//   height: 1.95,
+//   calcBMI: function () {
+//     this.bmi = this.mass / (this.height * this.height);
+//     return this.bmi;
+//   },
+// };
+
+// mark.calcBMI();
+// john.calcBMI();
+
+// mark.mbi > john.bmi
+//   ? console.log(
+//       `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`
+//     )
+//   : console.log(
+//       `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`
+//     );
+
+// const mark = {
+//   fullName: "Mark Miller",
+//   mass: 78,
+//   height: 1.69,
+//   calcBMI: function () {
+//     return this.mass / (this.height * this.height);
+//   },
+// };
+
+// const john = {
+//   fullName: "John Smith",
+//   mass: 92,
+//   height: 1.95,
+//   calcBMI: function () {
+//     return this.mass / (this.height * this.height);
+//   },
+// };
+
+// mark.calcBMI() > john.calcBMI()
+//   ? console.log(
+//       `${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${
+//         mark.fullName
+//       }'s (${mark.calcBMI()})!`
+//     )
+//   : console.log(
+//       `${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${
+//         john.fullName
+//       }'s (${john.calcBMI()})!`
+//     );
+
+const mark = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  },
+};
+
+const john = {
+  fullName: "John Smith",
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  },
+};
+
+mark.calcBMI() > john.calcBMI()
+  ? console.log(
+      `${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${
+        mark.fullName
+      }'s (${mark.calcBMI()})!`
+    )
+  : console.log(
+      `${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${
+        john.fullName
+      }'s (${john.calcBMI()})!`
+    );
