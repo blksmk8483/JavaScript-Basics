@@ -583,3 +583,51 @@ for (let rep = 3; rep <= 10; rep++) {
 for (let voter = 1; voter <= 50; voter++) {
   console.log(`Voter number ${voter} is currently voting.`);
 }
+
+// ----------------------------------------------------------------------------------
+// Looping Arrays, Breaking and Continuing:
+
+const brandon3 = [
+  "Brandon",
+  "Knight",
+  2037 - 1984,
+  "web developer",
+  ["Michael", "Peter", "Steven"],
+  "what!!!",
+  "it's",
+  true,
+  "this works!",
+];
+const types = [];
+
+for (let i = 0; i < brandon3.length; i++) {
+  console.log(brandon3[i], typeof brandon3[i]);
+
+  // FIlling types array
+  // types[i] = typeof brandon3[i];
+  types.push(typeof brandon3[i]);
+}
+
+console.log(types);
+
+const years4 = [1991, 2007, 1969, 2020];
+const ages4 = [];
+
+for (let i = 0; i < years4.length; i++) {
+  ages4.push(2037 - years4[i]);
+}
+
+console.log(ages4);
+
+// Continue and Break
+console.log("--- ONLY STRINGS ---");
+for (let i = 0; i < brandon3.length; i++) {
+  if (typeof brandon3[i] !== "string") continue;
+  console.log(brandon3[i], typeof brandon3[i]);
+}
+
+console.log("--- BREAK WITH NUMBER ---");
+for (let i = 0; i < brandon3.length; i++) {
+  if (typeof brandon3[i] === "number") break;
+  console.log(brandon3[i], typeof brandon3[i]);
+}
