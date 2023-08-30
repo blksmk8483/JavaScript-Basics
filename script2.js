@@ -568,3 +568,18 @@ mark.calcBMI() > john.calcBMI()
         john.fullName
       }'s (${john.calcBMI()})!`
     );
+
+// ----------------------------------------------------------------------------------
+// Iteration: The for loop.
+
+// For loop keeps running while condition is TRUE
+// for(let rep = 1; rep <= 10; rep++)
+
+for (let rep = 3; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+}
+
+// Challenge
+for (let voter = 1; voter <= 50; voter++) {
+  console.log(`Voter number ${voter} is currently voting.`);
+}
