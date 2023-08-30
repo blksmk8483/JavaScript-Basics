@@ -631,3 +631,18 @@ for (let i = 0; i < brandon3.length; i++) {
   if (typeof brandon3[i] === "number") break;
   console.log(brandon3[i], typeof brandon3[i]);
 }
+
+// Challenge:
+const populations5 = [10, 15, 35, 300];
+const percentages2 = [];
+
+function percentageOfWorldPrime(poplulation) {
+  return ((poplulation / 7900) * 100).toFixed(2);
+}
+
+for (let i = 0; i < populations5.length; i++) {
+  const perc = percentageOfWorldPrime(populations5[i]);
+  percentages2.push(perc);
+}
+
+console.log(percentages2);
