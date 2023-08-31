@@ -646,3 +646,83 @@ for (let i = 0; i < populations5.length; i++) {
 }
 
 console.log(percentages2);
+
+// ----------------------------------------------------------------------------------
+// Looping Backwards and Loops in Loops:
+
+// looping backwards
+const brandon7 = [
+  "Brandon",
+  "Knight",
+  2037 - 1984,
+  "web developer",
+  ["Michael", "Peter", "Steven"],
+];
+
+console.log("--- LOOPING BACKWARD ---");
+
+for (let i = brandon7.length - 1; i >= 0; i--) {
+  console.log(i, brandon7[i]);
+}
+
+// loops in loops
+for (let exercise = 1; exercise <= 3; exercise++) {
+  console.log(`-------- Starting exercise ${exercise}`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Lifting weight repetition ${rep} 🏋️‍♀️`);
+  }
+}
+
+// Challenge
+const listOfNeighbours = [
+  [["Canada, Mexico"], ["Spain"], ["Norway", "Sweden", "Russia"]],
+];
+
+for (let n = 0; n < listOfNeighbours.length; n++) {
+  for (let y = 0; y < listOfNeighbours[n].length; y++)
+    // console.log(listOfNeighbours[y])
+    console.log(`Neighbour: ${listOfNeighbours[n][y]}`);
+}
+
+// ----------------------------------------------------------------------------------
+// The While Loop:
+
+// for (let rep = 3; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+// }
+
+let rep = 1;
+while (rep <= 10) {
+  // console.log(`WHILE: Lifting weights repetition ${rep} 🏋️‍♀️`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}!`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log(`You rolled a ${dice}! The Loop is over!!! 🎉`);
+}
+
+// challenge: The While Loop
+const populations6 = [10, 15, 35, 300];
+const percentages3 = [];
+
+function percentageOfWorldPrime(poplulation) {
+  return ((poplulation / 7900) * 100).toFixed(2);
+}
+
+// for (let i = 0; i < populations6.length; i++) {
+//   const perc = percentageOfWorldPrime(populations6[i]);
+//   percentages3.push(perc);
+// }
+
+let i = 0;
+
+while (i < populations6.length) {
+  const perc = percentageOfWorldPrime(populations6[i]);
+  percentages3.push(perc);
+}
+console.log(percentages3);
