@@ -707,22 +707,55 @@ while (dice !== 6) {
 }
 
 // challenge: The While Loop
-const populations6 = [10, 15, 35, 300];
-const percentages3 = [];
+// const populations6 = [10, 15, 35, 300];
+// const percentages3 = [];
 
-function percentageOfWorldPrime(poplulation) {
-  return ((poplulation / 7900) * 100).toFixed(2);
-}
+// function percentageOfWorldPrime(poplulation) {
+//   return ((poplulation / 7900) * 100).toFixed(2);
+// }
 
-// for (let i = 0; i < populations6.length; i++) {
+// // for (let i = 0; i < populations6.length; i++) {
+// //   const perc = percentageOfWorldPrime(populations6[i]);
+// //   percentages3.push(perc);
+// // }
+
+// let i = 0;
+
+// while (i < populations6.length) {
 //   const perc = percentageOfWorldPrime(populations6[i]);
 //   percentages3.push(perc);
 // }
+// console.log(percentages3);
 
-let i = 0;
+// CHALLENGE #4
+const calcTip8 = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
 
-while (i < populations6.length) {
-  const perc = percentageOfWorldPrime(populations6[i]);
-  percentages3.push(perc);
+/* Write your code below. Good luck! 🙂 */
+
+const bills8 = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const tips8 = [];
+const totals8 = [];
+
+for (let i = 0; i < bills8.length; i++) {
+  const tip = calcTip8(bills8[i]);
+  tips8.push(tip);
+  totals8.push(tip + bills8[i]);
 }
-console.log(percentages3);
+
+console.log(bills8, tips8, totals8);
+
+const calcAverage2 = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    // sum = sum + arr[i];
+    // samething this is just the shorthand
+    sum += arr[i];
+  }
+  return sum / arr.length;
+};
+
+console.log(calcAverage2([2, 3, 7]));
+console.log(calcAverage2(totals));
