@@ -77,3 +77,70 @@ const calcTempAmplitudeNew = function (t1, t2) {
 
 const amplitudeNew = calcTempAmplitudeNew(temperatures, temperatures2);
 console.log(amplitudeNew);
+
+// ----------------------------------------------------------------------------------
+// Debugging with the Console and Breakpoints:
+const measureKelvin = function () {
+  const measurement = {
+    type: "temp",
+    unit: "celsius",
+    // value: Number(prompt("Degress celsius")),
+    value: 10,
+  };
+
+  const kelvin = measurement.value + 273;
+  return kelvin;
+};
+
+console.log(measureKelvin());
+
+// ----------------------------------------------------------------------------------
+// Challenge
+
+//  THIS IS WHAT I CAME UP WITH THAT WORKED
+
+// const forecastedMaximumTemps = [17, 21, 23];
+// const data2 = [12, 5, -5, 0, 4];
+
+// const printForecast = function (temp) {
+//   for (let i = 0; i < temp.length; i++) {
+//     console.log(`...${temp[i]}°C in ${[i + 1]} days `);
+//   }
+// };
+
+// printForecast(forecastedMaximumTemps);
+// printForecast(data2);
+// console.log(forecastedMaximumTemps);
+
+// ----------------------------------------------------------------------------------
+//  THIS IS WHAT THE EXAMPLE SOLUTION WAS
+
+// const data1 = [17, 21, 23];
+// const data2 = [12, 5, -5, 0, 4];
+
+// const printForecast = function (arr) {
+//   let str = "";
+//   for (let i = 0; i < arr.length; i++) {
+//     str = str + `${arr[i]}°C in ${i + 1} days ...`;
+//   }
+//   console.log("..." + str);
+// };
+
+// printForecast(data1);
+// printForecast(data2);
+
+// ----------------------------------------------------------------------------------
+//  THIS IS WHAT I WAS TRYING TO DO IN THE FIRST PLACE (I struggled to use the indexOf, I had it as temp.indexOf([i])) and I also tried temp[i].indexOf()...finally took a second and thought about it and got temp.indexOf(temp[i]) -- hooray!!! small victory for Brandon on August 31 @ 10:53pm 😀
+
+const forecastedMaximumTemps1 = [17, 21, 23];
+const forecastedMaximumTemps2 = [12, 5, -5, 0, 4];
+
+const printForecast = function (temp) {
+  for (let i = 0; i < temp.length; i++) {
+    const day = temp.indexOf(temp[i]);
+    console.log(`...${temp[i]}°C in ${day} days `);
+  }
+};
+
+printForecast(forecastedMaximumTemps1);
+printForecast(forecastedMaximumTemps2);
